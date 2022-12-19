@@ -9,7 +9,7 @@ console.log('Welcome ' + userName + ' to - Fandom Quiz?')
 var highScores = [
   {
     name: "SUMIT",
-    score: 3,
+    score: 5,
   },
 ]
 
@@ -38,6 +38,15 @@ var questions = [
   {
     question: 'Name a book dedicated to Narendra Modi written by Kingshuk Nag ?',
     answer: 'The NaMo Story',
+  },
+  
+  {
+    question: 'When was Narendra Modi elected as prime minister for the first time? ',
+    answer: '2014',
+  },
+  {
+    question: 'What is the full name of Narendra Modi?',
+    answer: 'Narendra Damodardas Modi',
   },
   
   {
