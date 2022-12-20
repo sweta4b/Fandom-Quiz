@@ -33,11 +33,11 @@ function play(question, answer) {
 // array of objects
 var questions = [
   {
-    question: 'When Narendra Modi was born?? ',
+    question: 'When Narendra Modi was born? ',
     answer: '17 September 1950',
   },
   {
-    question: 'Name a book dedicated to Narendra Modi written by Kingshuk Nag ?',
+    question: 'Name a book dedicated to Narendra Modi written by Kingshuk Nag? ',
     answer: 'The NaMo Story',
   },
 
@@ -46,7 +46,7 @@ var questions = [
     answer: '2014',
   },
   {
-    question: 'What is the full name of Narendra Modi?',
+    question: 'What is the full name of Narendra Modi? ',
     answer: 'Narendra Damodardas Modi',
   },
 
@@ -64,11 +64,10 @@ for (var i = 0; i < questions.length; i++) {
 
 if (score > 3) {
   console.log('YAY! You SCORED: ', score)
-  console.log('-------------------')
 } else {
   console.log('You scored: ', score)
-  console.log('-------------------')
 }
+console.log('-------------------')
 
 console.log('Check out the high scorers - ')
 for (var i = 0; i < highScores.length; i++) {
