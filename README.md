@@ -1,5 +1,7 @@
 # Fandom quiz
-A fandom quiz made with Javascript in repl.it about our Prime Minister.
+
+## Tech Stack
+A CLI app made using Node.js in repl.it.
 
 ## About
 Simple CLI quiz to test how well do people know our Prime Minister. Play it here: https://replit.com/@sweta4b/Fandom-Quiz?embed=1&output=1
