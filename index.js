@@ -4,6 +4,7 @@ var score = 0
 var userName = readlineSync.question("What's your name? ")
 
 console.log('Welcome ' + userName + ' to - Fandom Quiz?')
+console.log('\n')
 
 // data of high score
 var highScores = [
@@ -22,7 +23,7 @@ function play(question, answer) {
     score = score + 1
   } else {
     console.log('Oops! the correct answer is ' + answer)
-  
+
   }
 
   console.log('Current Score: ', score)
@@ -39,7 +40,7 @@ var questions = [
     question: 'Name a book dedicated to Narendra Modi written by Kingshuk Nag ?',
     answer: 'The NaMo Story',
   },
-  
+
   {
     question: 'When was Narendra Modi elected as prime minister for the first time? ',
     answer: '2014',
@@ -48,12 +49,12 @@ var questions = [
     question: 'What is the full name of Narendra Modi?',
     answer: 'Narendra Damodardas Modi',
   },
-  
+
   {
     question: 'At which place in the world, Narendra Modi wax statue was unveiled in a museum? ',
     answer: 'London',
   },
-  
+
 ]
 
 // loop
@@ -61,8 +62,13 @@ for (var i = 0; i < questions.length; i++) {
   play(questions[i].question, questions[i].answer)
 }
 
-console.log('YAY! You SCORED: ', score)
-console.log('-------------------')
+if (score > 3) {
+  console.log('YAY! You SCORED: ', score)
+  console.log('-------------------')
+} else {
+  console.log('You scored: ', score)
+  console.log('-------------------')
+}
 
 console.log('Check out the high scorers - ')
 for (var i = 0; i < highScores.length; i++) {
